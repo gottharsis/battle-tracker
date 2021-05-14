@@ -1,8 +1,14 @@
 import { Action } from "./action"
 export class Combatant {
-    name = ""
-    ac = 10
-    actions: Action[] = []
+    name: string
+    ac: number
+    actions: Action[]
+    traits: string[]
 
-    constructor() {}
+    constructor(name: string, ac: number, actions?: Action[], traits?: []) {
+        this.name = name
+        this.ac = ac
+        this.actions = actions ?? []
+        this.traits = traits ?? []
+    }
 }
