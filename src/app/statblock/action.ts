@@ -6,7 +6,6 @@ interface ActionConstructorParameters {
     name: string
     description: string
     economy?: time
-    effects?: string
     damage?: string
     hitBonus?: number
     dc?: string

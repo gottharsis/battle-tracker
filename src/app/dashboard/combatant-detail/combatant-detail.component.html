@@ -1,0 +1,10 @@
+<div *ngIf="combatant && !editMode" class="combatant-detail-container">
+    <p>{{ combatant }}</p>
+    <button (click)="enterEditMode()">Edit</button>
+</div>
+
+<div *ngIf="combatant && editMode" class="combatant-detail-container">
+    EDIT MODE BABY!!
+    <input [(ngModel)]="combatant.name" />
+    <button (click)="exitEditMode()">Save</button>
+</div>

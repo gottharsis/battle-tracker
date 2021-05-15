@@ -1,7 +1,5 @@
-import { Combatant } from './combatant';
+import { Combatant } from "./combatant"
 
-describe('Combatant', () => {
-  it('should create an instance', () => {
-    expect(new Combatant()).toBeTruthy();
-  });
-});
+describe("Combatant", () => {
+    it("should create an instance", () => {})
+})
