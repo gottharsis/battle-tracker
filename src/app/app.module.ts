@@ -5,10 +5,11 @@ import { AppRoutingModule } from "./app-routing.module"
 import { AppComponent } from "./app.component"
 import { DashboardComponent } from "./dashboard/dashboard.component"
 import { CombatantDetailComponent } from "./dashboard/combatant-detail/combatant-detail.component"
-import { FormsModule } from "@angular/forms"
+import { FormsModule } from "@angular/forms";
+import { RollerComponent } from './roller/roller.component'
 
 @NgModule({
-    declarations: [AppComponent, DashboardComponent, CombatantDetailComponent],
+    declarations: [AppComponent, DashboardComponent, CombatantDetailComponent, RollerComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent],

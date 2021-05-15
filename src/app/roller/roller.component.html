@@ -1,0 +1,10 @@
+<div id="roller-output">
+    <div>Roller Results:</div>
+    <ul>
+        <li *ngFor="let item of history">{{ item }}</li>
+    </ul>
+    <div>
+        <input type="text" [(ngModel)]="query" />
+        <button (click)="roll()">Roll</button>
+    </div>
+</div>

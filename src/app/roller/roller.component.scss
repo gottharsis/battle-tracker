@@ -1,0 +1,32 @@
+#roller-output {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 100px;
+    box-sizing: border-box;
+    margin: 10px;
+
+    ul {
+        border: 1px solid grey;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow-y: scroll;
+        max-height: 200px;
+
+        li {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+
+            border-bottom: 1px solid grey;
+
+            flex: 1;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

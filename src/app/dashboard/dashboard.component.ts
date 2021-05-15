@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core"
+import { RollerService } from "../roller.service"
 import { Combatant } from "../statblock/combatant"
 
 @Component({
@@ -9,7 +10,7 @@ import { Combatant } from "../statblock/combatant"
 export class DashboardComponent implements OnInit {
     combatants: Combatant[]
 
-    constructor() {
+    constructor(private rollerService: RollerService) {
         this.combatants = [
             new Combatant({
                 name: "Test1",
@@ -25,6 +26,10 @@ export class DashboardComponent implements OnInit {
                 ],
             }),
         ]
+    }
+
+    roll() {
+        this.rollerService.rollDice("3d6")
     }
 
     ngOnInit(): void {}
